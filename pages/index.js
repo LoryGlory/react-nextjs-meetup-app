@@ -23,13 +23,27 @@ function HomePage(props) {
   )
 };
 
-//getStaticProps will return the data on the first render cycle; data-fetching for pre-rendering
+// GETSERVERSIDEPROPS EXAMPLE
+// export async function getServerSideProps(context) {
+//   const req = context.req;
+//   const res = context.res;
+//
+//   return {
+//     props: {
+//       meetups: DUMMY_MEETUPS
+//     }
+//   }
+// }
+
+
+// getStaticProps will return the data on the first render cycle; data-fetching for pre-rendering
 export async function getStaticProps() {
   //fetch data from an api for example
   return {
     props: {
       meetups: DUMMY_MEETUPS
-    }
+    },
+    revalidate: 10
   };
 }
 
