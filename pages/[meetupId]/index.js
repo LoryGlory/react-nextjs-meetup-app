@@ -1,49 +1,61 @@
+import {MongoClient, ObjectId} from "mongodb";
 import MeetUpDetail from "../../components/meetups/MeetUpDetail";
 
-function MeetupDetails() {
+function MeetupDetails(props) {
   return (
       <MeetUpDetail
-          image='https://images.unsplash.com/photo-1503609796759-4cfd4d5a0b9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80'
-          title='First Meetup'
-          address='Some Street 1, San Francisco'
-          description='The meetup description'
+          image={props.meetupData.image}
+          title={props.meetupData.title}
+          address={props.meetupData.address}
+          description={props.meetupData.description}
       />
   )
 };
 
 export async function getStaticPaths() {
+  const client = await MongoClient.connect(
+      'mongodb+srv://laura:VS4u4uayit9gMe8L@cluster0.nf7log0.mongodb.net/?retryWrites=true&w=majority'
+  );
+  const db = client.db();
+
+  const meetupsCollection = db.collection('meetups');
+
+  const meetups = await meetupsCollection.find({}, {_id: 1}).toArray();
+
+  client.close();
+
   return {
     fallback: false,
-    paths: [
-      {
-        params: {
-          meetupId: 'm1',
-        }
-      },
-      {
-        params: {
-          meetupId: 'm2',
-        }
-      }
-    ]
-  }
+    paths: meetups.map(meetup => ({
+      params: {meetupId: meetup._id.toString()},
+    }))
+  };
 }
 
 export async function getStaticProps(context) {
   const meetupId = context.params.meetupId;
 
-  // fetch data
+  const client = await MongoClient.connect(
+      'mongodb+srv://laura:VS4u4uayit9gMe8L@cluster0.nf7log0.mongodb.net/?retryWrites=true&w=majority'
+  );
+  const db = client.db();
+
+  const meetupsCollection = db.collection('meetups');
+
+  const selectedMeetup = await meetupsCollection.findOne({_id: ObjectId(meetupId)});
+
+  client.close();
 
   return {
     props: {
       meetupData: {
-        image: 'https://images.unsplash.com/photo-1503609796759-4cfd4d5a0b9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80',
-        id: 'm1',
-        title: 'First Meetup',
-        address: 'Some Street 1, San Francisco',
-        description: 'The meetup description'
-      }
-    }
+        id: selectedMeetup._id.toString(),
+        title: selectedMeetup.title,
+        address: selectedMeetup.address,
+        image: selectedMeetup.image,
+        description: selectedMeetup.description,
+      },
+    },
   }
 }
 
