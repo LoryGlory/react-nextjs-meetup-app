@@ -117,6 +117,10 @@ Node.js and npm is needed:
    ```sh
    npm run dev
    ```
+   
+OR 
+
+Open Link: [react-nextjs-meetup-app.vercel.app] (react-nextjs-meetup-app.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
