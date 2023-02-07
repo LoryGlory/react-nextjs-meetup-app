@@ -120,7 +120,7 @@ Node.js and npm is needed:
    
 OR 
 
-Open Link: [react-nextjs-meetup-app.vercel.app] (react-nextjs-meetup-app.vercel.app)
+Open Link: [https://react-nextjs-meetup-app.vercel.app/] (https://react-nextjs-meetup-app.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
