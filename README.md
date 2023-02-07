@@ -1,36 +1,224 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
+
+
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/LoryGlory/react-nextjs-meetup-app">
+    <img src="public/vercel.svg" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">React / Next MeetUp App</h3>
+
+  <p align="center">
+    React sample project to create meetups.
+    <br />
+    <br />
+    <a href="https://github.com/LoryGlory/react-nextjs-meetup-app">Report Bug</a>
+    ·
+    <a href="https://github.com/LoryGlory/react-nextjs-meetup-app">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li> 
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+React app created to display and add meetups. Includes Next.js dynamic routing, MongoDB database connection and basic input validity.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+[![React][React.js]][React-url]
+<br/>
+[![Next][Next.js]][Next-url]
+<br/>
+[![MongoDB][MongoDB]][MongoDB-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Node.js and npm is needed:
+[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Installation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/LoryGlory/react-nextjs-meetup-app
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run project in localhost
+   ```sh
+   npm run dev
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+<!-- USAGE EXAMPLES -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This is an example project using React.js solely for training purposes.
 
-## Deploy on Vercel
+<!-- Possible additions -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<!-- CONTACT -->
+
+## Contact
+
+Project Link: [https://github.com/LoryGlory/react-nextjs-meetup-app](https://github.com/LoryGlory/react-nextjs-meetup-app)
+<br/><br/>
+LinkedIn: [https://www.linkedin.com/in/laura-roganovic-1a694b207/](https://www.linkedin.com/in/laura-roganovic-1a694b207/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+* []() [Maximilian Schwarzmüller ](https://github.com/academind)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/LoryGlory/react-nextjs-meetup-app.svg?style=for-the-badge
+
+[contributors-url]: https://github.com/LoryGlory/react-nextjs-meetup-app/graphs/contributors
+
+[forks-shield]: https://img.shields.io/github/forks/LoryGlory/react-nextjs-meetup-app.svg?style=for-the-badge
+
+[forks-url]: https://github.com/LoryGlory/react-nextjs-meetup-app/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/LoryGlory/react-nextjs-meetup-app.svg?style=for-the-badge
+
+[stars-url]: https://github.com/LoryGlory/react-nextjs-meetup-app/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/LoryGlory/react-nextjs-meetup-app.svg?style=for-the-badge
+
+[issues-url]: https://github.com/LoryGlory/react-nextjs-meetup-app
+
+[license-shield]: https://img.shields.io/github/license/LoryGlory/react-nextjs-meetup-app.svg?style=for-the-badge
+
+[license-url]: https://github.com/LoryGlory/react-nextjs-meetup-app/blob/master/LICENSE.txt
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+[linkedin-url]: https://www.linkedin.com/in/laura-roganovic-1a694b207/
+
+[product-screenshot]: public/screenshot.png
+
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+
+[Next-url]: https://nextjs.org/
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+
+[React-url]: https://reactjs.org/
+
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+
+[Vue-url]: https://vuejs.org/
+
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+
+[Angular-url]: https://angular.io/
+
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+
+[Svelte-url]: https://svelte.dev/
+
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+
+[Laravel-url]: https://laravel.com
+
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+
+[Bootstrap-url]: https://getbootstrap.com
+
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+
+[JQuery-url]: https://jquery.com
+
+[Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
+
+[Firebase-url]: https://firebase.google.com/
+
+[MongoDB]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
+
+[MongoDB-url]: https://www.mongodb.com/
+
