@@ -1,3 +1,4 @@
+// component to display meetup items
 import MeetupItem from './MeetupItem';
 import classes from './MeetupList.module.css';
 

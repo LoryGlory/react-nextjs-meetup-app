@@ -1,4 +1,4 @@
-// our-domain.com/new-meetup
+// new-meetup subpage / containing form to add new meetups and API to post data
 import Head from "next/head";
 import {Fragment} from "react";
 import {useRouter} from 'next/router';
@@ -6,8 +6,10 @@ import {useRouter} from 'next/router';
 import NewMeetupForm from '../../components/meetups/NewMeetupForm';
 
 function NewMeetupPage() {
+  // useRouter to direct users back to home after submitting (see below)
   const router = useRouter();
 
+  // connect to MongoDB database in /api, post new meetup
   async function addMeetupHandler(enteredMeetupData) {
     const response = await fetch('/api/new-meetup', {
       method: 'POST',
@@ -21,6 +23,7 @@ function NewMeetupPage() {
 
     console.log(data);
 
+    // direct user back to home
     router.push('/');
   }
 

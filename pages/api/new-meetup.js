@@ -1,8 +1,10 @@
+// MongoDB connection component
 import { MongoClient } from 'mongodb';
 
 // /api/new-meetup
 // POST /api/new-meetup
 
+// function to connect to MongoDB
 async function handler(req, res) {
   if (req.method === 'POST') {
     const data = req.body;

@@ -1,3 +1,4 @@
+// individual meetup items
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
 import {useRouter} from "next/router";

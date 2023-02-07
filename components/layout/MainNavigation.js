@@ -1,3 +1,4 @@
+// navigation component
 import classes from './MainNavigation.module.css';
 import Link from "next/link";
 

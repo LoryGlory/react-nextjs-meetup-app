@@ -1,3 +1,4 @@
+// component for single meetup detail page
 import classes from "./MeetUpDetail.module.css";
 
 function MeetUpDetail(props) {

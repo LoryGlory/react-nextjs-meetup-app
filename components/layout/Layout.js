@@ -1,3 +1,4 @@
+// layout component containing main navigation and main content
 import MainNavigation from './MainNavigation';
 import classes from './Layout.module.css';
 

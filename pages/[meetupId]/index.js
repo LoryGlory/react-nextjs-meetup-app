@@ -1,3 +1,4 @@
+// dynamic routing component for individual meetups
 import Head from "next/head";
 import {Fragment} from "react";
 import {MongoClient, ObjectId} from "mongodb";
@@ -6,6 +7,7 @@ import MeetUpDetail from "../../components/meetups/MeetUpDetail";
 function MeetupDetails(props) {
   return (
       <Fragment>
+        {/* Head section to display meetup title as page title */}
         <Head>
           <title>{props.meetupData.title}</title>
           <meta
@@ -13,6 +15,7 @@ function MeetupDetails(props) {
               content={props.meetupData.description}
           />
         </Head>
+        {/* dynamic meetup detail props */}
         <MeetUpDetail
             image={props.meetupData.image}
             title={props.meetupData.title}
@@ -23,6 +26,7 @@ function MeetupDetails(props) {
   )
 };
 
+// define lists for static path rendering for meetups
 export async function getStaticPaths() {
   const client = await MongoClient.connect(
       'mongodb+srv://laura:VS4u4uayit9gMe8L@cluster0.nf7log0.mongodb.net/?retryWrites=true&w=majority'
@@ -43,6 +47,7 @@ export async function getStaticPaths() {
   };
 }
 
+// render static props on server for meetup according to context object created in getStaticPaths
 export async function getStaticProps(context) {
   const meetupId = context.params.meetupId;
 
