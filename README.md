@@ -133,7 +133,9 @@ Open Link: [https://react-nextjs-meetup-app.vercel.app](https://react-nextjs-mee
 This is an example project using React.js solely for training purposes.
 
 <!-- Possible additions -->
+### Future Additions
 
+- [ ] Secure/hide the database connection in code 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
